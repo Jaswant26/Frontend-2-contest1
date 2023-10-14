@@ -1,11 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=DM+Sans:ital,opsz,wght@1,9..40,200&family=Fasthand&family=Nunito+Sans:opsz,wght@6..12,300&family=Poppins:wght@200;400&family=Roboto:ital,wght@0,400;1,100&family=Source+Code+Pro&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=DM+Sans:ital,opsz,wght@1,9..40,200&family=Fasthand&family=Nunito+Sans:opsz,wght@6..12,300&family=Poppins:wght@200;400&family=Roboto:ital,wght@0,400;1,100&family=Source+Code+Pro:ital,wght@0,400;1,200&display=swap");
 @font-face {
-    font-family: "Virgil";
-    src: url("Virgil.woff2");
-    font-display: swap;
-  }
-  * {
+    font-family:myFont ;
+    src: url(VirgilRegular.otf);
+}
+* {
   margin: 0px;
   padding: 0px;
 }
@@ -135,7 +134,7 @@ i {
 }
 .diff-options {
   color: #bdbdbd;
-  font-family: virgil;
+  font-family: 'VIRGIL BLACK', sans-serif;
 }
 .header-info {
   position: absolute;
@@ -163,7 +162,9 @@ i {
   width: 40px;
   height: 40px;
 }
-
+.diff-options{
+    font-family: virgil;
+}
 .product-name {
   color: #190064;
   width: 229.09px;
@@ -320,7 +321,8 @@ footer {
   background-color: white;
   font-size: 15px;
   font-weight: 100;
-  padding-inline: 10px;
+  
+  padding: 10px;
 }
 .zoom-out:hover {
   background-color: #b8b8b8;
@@ -338,9 +340,6 @@ footer {
 .vertical-line-2 {
   border-right: 1px solid #b8b8b8;
   height: 30px;
-  font-size: 15px;
-  font-weight: 100;
-  padding-inline: 10px;
 }
 .undo-button,
 .forward-button {
@@ -348,15 +347,21 @@ footer {
   background-color: white;
 }
 .forward-button {
-  margin-left: 20px;
+    margin-left: 10px;
 }
 .undo-forward {
   display: flex;
   justify-content: space-between;
   border: 1px solid #b8b8b8;
-  padding: 5px;
+  padding: 10px;
   border-radius: 10px;
-  margin-inline: 10px;
+}
+.undo-forward>button:hover{
+    background-color: #b8b8b8;
+    border-radius: 10p;
+}
+.undo-button{
+    margin-right: 10px;
 }
 .button-size {
   font-size: 15px;
@@ -368,6 +373,8 @@ footer {
   padding-inline: 10px;
   padding: 10px;
   position: relative;
+}.footer-zoom>button:hover{
+    background-color: #c2c2c2;
 }
 .shield-image {
   font-size: 15px;
