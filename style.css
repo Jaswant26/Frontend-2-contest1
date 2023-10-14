@@ -359,6 +359,7 @@ footer {
 .undo-forward>button:hover{
     background-color: #b8b8b8;
     border-radius: 10p;
+    cursor: pointer;
 }
 .undo-button{
     margin-right: 10px;
@@ -375,6 +376,7 @@ footer {
   position: relative;
 }.footer-zoom>button:hover{
     background-color: #c2c2c2;
+    cursor: pointer;
 }
 .shield-image {
   font-size: 15px;
@@ -388,6 +390,7 @@ footer {
 }
 .question-image:hover {
   background-color: rgb(243, 239, 239);
+  cursor: pointer;
 }
 .help-arrow {
   margin-top: 0.5rem;
