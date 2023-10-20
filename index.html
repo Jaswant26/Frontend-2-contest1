@@ -6,7 +6,7 @@
     <title>Excalidraw | Hand-drawn look & feel • Collaborative • Secure</title>
     <link rel="icon" type="image/x-icon" href="WhatsApp Image 2023-10-14 at 3.41.58 PM.jpeg" />
     <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.cdnfonts.com/css/virgil-black" rel="stylesheet">
+    
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -57,23 +57,23 @@
       </div>
 
       <div class="header-toolbar">
-        <div>
+        <button>
           <i class="fa-solid fa-lock-open"></i>
-        </div>
+        </button>
         <span class="vertical-line"></span>
-        <div><i class="fa-regular fa-hand"></i></div>
-        <div><i class="fa-solid fa-arrow-left"></i><sub>1</sub></div>
-        <div><i class="fa-regular fa-square"></i><sub>2</sub></div>
-        <div><i class="fa-regular fa-square sqaure"></i><sub>3</sub></div>
-        <div><i class="fa-regular fa-circle"></i><sub>4</sub></div>
-        <div><i class="fa-solid fa-arrow-right"></i><sub>5</sub></div>
-        <div><i class="fa-solid fa-minus"></i><sub>6</sub></div>
-        <div><i class="fa-solid fa-pencil"></i><sub>7</sub></div>
-        <div><i class="fa-solid fa-a"></i><sub>8</sub></div>
-        <div><i class="fa-regular fa-image"></i><sub>9</sub></div>
-        <div><i class="fa-solid fa-eraser"></i><sub>0</sub></div>
+        <button><i class="fa-regular fa-hand"></i></button>
+        <button><i class="fa-solid fa-arrow-left"></i><sub>1</sub></button>
+        <button><i class="fa-regular fa-square"></i><sub>2</sub></button>
+        <button><i class="fa-regular fa-square sqaure"></i><sub>3</sub></button>
+        <button><i class="fa-regular fa-circle"></i><sub>4</sub></button>
+        <button><i class="fa-solid fa-arrow-right"></i><sub>5</sub></button>
+        <button><i class="fa-solid fa-minus"></i><sub>6</sub></button>
+        <button><i class="fa-solid fa-pencil"></i><sub>7</sub></button>
+        <button><i class="fa-solid fa-a"></i><sub>8</sub></button>
+        <button><i class="fa-regular fa-image"></i><sub>9</sub></button>
+        <button><i class="fa-solid fa-eraser"></i><sub>0</sub></button>
         <span class="vertical-line"></span>
-        <div><i class="fa-solid fa-shapes"></i></div>
+        <button><i class="fa-solid fa-shapes"></i></button>
         <section class="header-info">
           <div class="info-toolbar">
             Pick a tool <br />
@@ -111,7 +111,7 @@
       </div>
       <div class="header-right">
         <div class="people"><i class="fa-solid fa-person"></i></div>
-        <button>
+        <button class="library-btn">
           <i class="fa-solid fa-book-open"></i
           ><span class="Library"> Library</span>
         </button>
@@ -203,11 +203,9 @@
               <i class="fa-solid fa-minus"></i>
             </div>
           </button>
-          <div class="vertical-line-2"></div>
           <button class="screen-size-perc">
             <div>300%</div>
           </button>
-          <div class="vertical-line-2"></div>
           <button class="zoom-in">
             <i class="fa-solid fa-plus"></i>
           </button>
@@ -216,7 +214,6 @@
           <button class="undo-button">
             <i class="fa-solid fa-arrow-left button-size"></i>
           </button>
-          <div class="vertical-line-2"></div>
           <button class="forward-button">
             <i class="fa-solid fa-arrow-right button-size"></i>
           </button>
@@ -263,5 +260,6 @@
         </button>
       </div>
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>

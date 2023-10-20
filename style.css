@@ -54,14 +54,16 @@ header {
 .sqaure {
   rotate: 45deg;
 }
-.header-toolbar > div {
+.header-toolbar > button{
   font-size: 15px;
   padding: 10px;
+  background-color: white;
+  border: none;
 }
-.header-toolbar > div > sub {
+.header-toolbar > button > sub {
   color: #c9c9c9;
 }
-.header-toolbar > div:hover {
+.header-toolbar > button:hover {
   background-color: rgb(243, 239, 239);
   border-radius: 5px;
   cursor: pointer;
@@ -80,10 +82,9 @@ i {
   flex: 1;
 }
 .header-right > button {
-  padding: 10px;
+  padding: 15px;
   border-radius: 10px;
-  border: 2px solid #d6d6d6;
-  background-color: white;
+  background-color: #ececf3;
   display: flex;
   justify-content: center;
   width: 100px;
@@ -107,6 +108,9 @@ i {
 .people > i:hover {
   background-color: #605cdb;
   cursor: pointer;
+}
+.library-btn{
+  border: none;
 }
 .draging-tool-info {
   text-align: center;
@@ -318,11 +322,11 @@ footer {
 .screen-size-perc,
 .zoom-in {
   border: none;
-  background-color: white;
-  font-size: 15px;
+  background-color: #ececf3;
+  font-size: 13px;
   font-weight: 100;
-  
-  padding: 10px;
+  border-radius: 4px;
+  padding: 5px;
 }
 .zoom-out:hover {
   background-color: #b8b8b8;
@@ -331,20 +335,19 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid #b8b8b8;
+  border: none;
+  background-color: #ececf3;
   padding: 5px;
   border-radius: 10px;
   margin-inline: 10px;
 }
 
-.vertical-line-2 {
-  border-right: 1px solid #b8b8b8;
-  height: 30px;
-}
+
 .undo-button,
 .forward-button {
   border: none;
-  background-color: white;
+  background-color: #ececf3;
+  padding:5px;
 }
 .forward-button {
     margin-left: 10px;
@@ -352,8 +355,9 @@ footer {
 .undo-forward {
   display: flex;
   justify-content: space-between;
-  border: 1px solid #b8b8b8;
-  padding: 10px;
+  background-color: #ececf3;
+  border:none;
+  padding: 5px;
   border-radius: 10px;
 }
 .undo-forward>button:hover{
@@ -372,9 +376,9 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding-inline: 10px;
-  padding: 10px;
   position: relative;
-}.footer-zoom>button:hover{
+}
+.footer-zoom>button:hover{
     background-color: #c2c2c2;
     cursor: pointer;
 }
@@ -386,7 +390,8 @@ footer {
   padding: 10px;
   margin-left: 10px;
   border-radius: 10px;
-  background-color: white;
+  background-color: #ececf3;
+  border: none;
 }
 .question-image:hover {
   background-color: rgb(243, 239, 239);
