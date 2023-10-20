@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=DM+Sans:ital,opsz,wght@1,9..40,200&family=Fasthand&family=Nunito+Sans:opsz,wght@6..12,300&family=Poppins:wght@200;400&family=Roboto:ital,wght@0,400;1,100&family=Source+Code+Pro&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=DM+Sans:ital,opsz,wght@1,9..40,200&family=Fasthand&family=Nunito+Sans:opsz,wght@6..12,300&family=Poppins:wght@200;400&family=Roboto:ital,wght@0,400;1,100&family=Source+Code+Pro:ital,wght@0,400;1,200&display=swap");
 @font-face {
-    font-family:myFont ;
-    src: url(VirgilRegular.otf);
+  font-family: myFont;
+  src: url(VirgilRegular.otf);
 }
 * {
   margin: 0px;
@@ -54,7 +54,7 @@ header {
 .sqaure {
   rotate: 45deg;
 }
-.header-toolbar > button{
+.header-toolbar > button {
   font-size: 15px;
   padding: 10px;
   background-color: white;
@@ -109,7 +109,7 @@ i {
   background-color: #605cdb;
   cursor: pointer;
 }
-.library-btn{
+.library-btn {
   border: none;
 }
 .draging-tool-info {
@@ -138,7 +138,7 @@ i {
 }
 .diff-options {
   color: #bdbdbd;
-  font-family: 'VIRGIL BLACK', sans-serif;
+  font-family: "VIRGIL BLACK", sans-serif;
 }
 .header-info {
   position: absolute;
@@ -166,8 +166,8 @@ i {
   width: 40px;
   height: 40px;
 }
-.diff-options{
-    font-family: virgil;
+.diff-options {
+  font-family: virgil;
 }
 .product-name {
   color: #190064;
@@ -342,31 +342,30 @@ footer {
   margin-inline: 10px;
 }
 
-
 .undo-button,
 .forward-button {
   border: none;
   background-color: #ececf3;
-  padding:5px;
+  padding: 5px;
 }
 .forward-button {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 .undo-forward {
   display: flex;
   justify-content: space-between;
   background-color: #ececf3;
-  border:none;
+  border: none;
   padding: 5px;
   border-radius: 10px;
 }
-.undo-forward>button:hover{
-    background-color: #b8b8b8;
-    border-radius: 10p;
-    cursor: pointer;
+.undo-forward > button:hover {
+  background-color: #b8b8b8;
+  border-radius: 10p;
+  cursor: pointer;
 }
-.undo-button{
-    margin-right: 10px;
+.undo-button {
+  margin-right: 10px;
 }
 .button-size {
   font-size: 15px;
@@ -378,9 +377,9 @@ footer {
   padding-inline: 10px;
   position: relative;
 }
-.footer-zoom>button:hover{
-    background-color: #c2c2c2;
-    cursor: pointer;
+.footer-zoom > button:hover {
+  background-color: #c2c2c2;
+  cursor: pointer;
 }
 .shield-image {
   font-size: 15px;
