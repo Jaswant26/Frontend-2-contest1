@@ -18,8 +18,17 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script>
+      function erase(event) {
+        var canvas = document.getElementById("canvas");
+        var context = canvas.getContext("2d");
+        context.globalCompositeOperation = "destination-out";
+        context.fillRect(event.clientX, event.clientY, 10, 10);
+      }
+      </script>
   </head>
   <body>
+    <div id="root">
     <header>
       <div class="sidebar">
         <div class="dropdown">
@@ -41,10 +50,11 @@
         <button><i class="fa-regular fa-circle"></i><sub>4</sub></button>
         <button><i class="fa-solid fa-arrow-right"></i><sub>5</sub></button>
         <button><i class="fa-solid fa-minus"></i><sub>6</sub></button>
-        <button><i class="fa-solid fa-pencil"></i><sub>7</sub></button>
+        <button><i class="fa-solid fa-pencil " id="pencil"></i><sub>7</sub></button>
+        <input type="color" id="color-picker">
         <button><i class="fa-solid fa-a"></i><sub>8</sub></button>
         <button><i class="fa-regular fa-image"></i><sub>9</sub></button>
-        <button><i class="fa-solid fa-eraser"></i><sub>0</sub></button>
+        <button><i class="fa-solid fa-eraser" onclick="erase()"></i><sub>0</sub></button>
         <span class="vertical-line"></span>
         <button><i class="fa-solid fa-shapes"></i></button>
       </div>
@@ -56,13 +66,7 @@
         </button>
       </div>
     </header>
-    <div class="draging-tool-info">
-      <p>
-        To move canvas, hold mouse wheel pr spacebar while draging, or use the
-        handle tool
-      </p>
-    </div>
-
+    <canvas id="canvas"></canvas>
     <footer>
       <div class="footer-left">
         <div class="footer-zoom">
@@ -96,6 +100,8 @@
         </button>
       </div>
     </footer>
+    </div>
     <script src="index.js"></script>
+    <script src="freehand.js"></script>
   </body>
 </html>

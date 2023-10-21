@@ -8,18 +8,27 @@
   margin: 0px;
   padding: 0px;
 }
+#root {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
 body {
   background-color: #ffffff;
 }
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
+  position: absolute;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
 }
 .sidebar {
   display: flex;
   flex: 1;
+  z-index: 100;
 }
 .dropdown > button:hover {
   background-color: rgb(243, 239, 239);
@@ -46,6 +55,7 @@ header {
   flex: 1.5;
   position: relative;
   box-shadow: 0px 0px 5px black;
+  z-index: 100;
 }
 .vertical-line {
   height: 30px;
@@ -57,8 +67,10 @@ header {
 .header-toolbar > button {
   font-size: 15px;
   padding: 10px;
-  background-color: white;
+  background-color:transparent;
   border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 .header-toolbar > button > sub {
   color: #c9c9c9;
@@ -68,8 +80,11 @@ header {
   border-radius: 5px;
   cursor: pointer;
 }
-.header-toolbar > div:visited {
-  background-color: #e3e2fe;
+.active {
+  background-color: #3a34eb;
+  border-radius: 4px;
+  color: white;
+  padding: 10px;
 }
 i {
   color: #555555;
@@ -120,199 +135,21 @@ i {
 .dropdown {
   position: relative;
 }
-.dropdown-options {
-  position: absolute;
-  width: 320px;
-  font-size: 1rem;
-  top: 100%;
-  margin-top: 0.25rem;
-  margin-inline-start: 0.2rem;
-  display: flex;
-  align-items: flex-end;
-  gap: 0.5rem;
-}
-.dropdown-arrow {
-  width: 41px;
-  height: 91px;
-  color: #bdbdbd;
-}
-.diff-options {
-  color: #bdbdbd;
-  font-family: "VIRGIL BLACK", sans-serif;
-}
-.header-info {
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translate(-50%);
-  margin-top: 2.5rem;
-  display: flex;
-  align-items: baseline;
-}
-.header-info-arrow {
-  width: 38px;
-  height: 78px;
-  color: #bdbdbd;
-}
-.info-toolbar {
-  color: #bdbdbd;
-  font-family: virgil;
-}
-.info-toolbar:hover {
-  background-color: none;
-}
-.logo {
-  color: #6865db;
-  width: 40px;
-  height: 40px;
-}
-.diff-options {
-  font-family: virgil;
-}
-.product-name {
-  color: #190064;
-  width: 229.09px;
-  height: 28px;
-  margin-left: 12px;
-}
-.main-logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 230px;
-}
-.data-saved {
-  text-align: center;
-  margin-top: 30px;
-  font-size: 1.125rem;
-  font-family: virgil;
-  color: #b8b8b8;
-}
-.shortcuts {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  justify-content: center;
-  align-items: center;
-  margin-top: 40px;
-}
-.folder-button {
-  width: 20%;
-  display: flex;
-  justify-content: space-between;
-  border: none;
-  background-color: white;
-  padding: 10px;
-}
-.folder-button:hover {
-  background-color: rgb(243, 239, 239);
-  border-radius: 5px;
-  cursor: pointer;
-}
-.folder-image > i {
-  color: #b8b8b8;
-}
-.open-folder {
-  display: flex;
-  align-items: center;
-  margin-right: auto;
-  text-align: left;
-  column-gap: 0.5rem;
-  margin-left: 5px;
-  color: #b8b8b8;
-  font-size: 15px;
-}
-.command {
-  margin-left: auto;
-  color: #b8b8b8;
-  font-size: 0.75rem;
-}
-.help-button {
-  margin-top: 5px;
-  width: 20%;
-  display: flex;
-  justify-content: space-between;
-  border: none;
-  background-color: white;
-  padding: 10px;
-}
-.help-button:hover {
-  background-color: rgb(243, 239, 239);
-  border-radius: 5px;
-  cursor: pointer;
-}
-.help-option {
-  display: flex;
-  align-items: center;
-  margin-right: auto;
-  text-align: left;
-  column-gap: 0.5rem;
-  margin-left: 10px;
-  color: #b8b8b8;
-  font-size: 15px;
-}
-.live-collab-button {
-  margin-top: 5px;
-  width: 20%;
-  display: flex;
-  justify-content: space-between;
-  border: none;
-  background-color: white;
-  padding: 10px;
-}
-.live-collab-button:hover {
-  background-color: rgb(243, 239, 239);
-  border-radius: 5px;
-  cursor: pointer;
-}
-.live-collab {
-  display: flex;
-  align-items: center;
-  margin-right: auto;
-  text-align: left;
-  column-gap: 0.5rem;
-  margin-left: 10px;
-  color: #b8b8b8;
-  font-size: 15px;
-}
-.premium-anchor {
-  margin-top: 5px;
-  width: 20%;
-  display: flex;
-  justify-content: space-between;
-  border: none;
-  background-color: white;
-  padding: 10px;
-  text-decoration: none;
-  margin-left: 15px;
-}
-.premium-anchor:hover {
-  background-color: rgb(243, 239, 239);
-  border-radius: 5px;
-  cursor: pointer;
-}
-.premium-option {
-  display: flex;
-  align-items: center;
-  margin-right: auto;
-  text-align: left;
-  column-gap: 0.5rem;
-  margin-left: 10px;
-  color: #b8b8b8;
-  font-size: 15px;
-}
+
 footer {
+  position: absolute;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: absolute;
-  bottom: 1rem;
+  left: 2px;
+  bottom: 20px;
   width: 100%;
 }
 .footer-left {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 100;
 }
 .zoom-out:hover {
   background-color: rgb(243, 239, 239);
@@ -347,6 +184,7 @@ footer {
   border: none;
   background-color: #ececf3;
   padding: 5px;
+  z-index: 100;
 }
 .forward-button {
   margin-left: 10px;
@@ -375,7 +213,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding-inline: 10px;
-  position: relative;
+  z-index: 100;
 }
 .footer-zoom > button:hover {
   background-color: #c2c2c2;
@@ -391,46 +229,25 @@ footer {
   border-radius: 10px;
   background-color: #ececf3;
   border: none;
+  z-index: 100;
 }
 .question-image:hover {
   background-color: rgb(243, 239, 239);
   cursor: pointer;
 }
-.help-arrow {
-  margin-top: 0.5rem;
-  width: 85px;
-  height: 71px;
-  transform: scaleX(-1) rotate(80deg);
-  color: #b8b8b8;
-}
-.shortcut-arrow {
-  display: flex;
-  position: absolute;
-  right: 0;
-  bottom: 100%;
-  margin-right: 10px;
-}
-.text-shortcut {
-  color: #b8b8b8;
-  font-family: virgil;
-}
-@media screen and (max-width: 729px) {
+
+@media screen and (max-width: 837px) {
   .header-toolbar {
     display: flex;
     align-items: center;
     justify-content: center;
   }
   .header-right,
-  .shortcut-arrow,
   .dropdown-options,
-  .header-info,
   .draging-tool-info,
   .sidebar,
   .question-mark,
   .command {
-    display: none;
-  }
-  .shortcut-arrow {
     display: none;
   }
 }
