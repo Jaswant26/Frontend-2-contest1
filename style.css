@@ -28,9 +28,11 @@ header {
 }
 .sidebar {
   display: flex;
+  
 }
 .dropdown > button:hover {
   cursor: pointer;
+  background-color: #ececf3;
 }
 .dropdown > button {
   padding: 8px;
@@ -195,7 +197,7 @@ footer {
   border-radius: 10px;
 }
 .undo-forward > button:hover {
-  background-color: #b8b8b8;
+  background-color: rgb(243, 239, 239);
   border-radius: 10p;
   cursor: pointer;
 }
@@ -213,7 +215,7 @@ footer {
   z-index: 100;
 }
 .footer-zoom > button:hover {
-  background-color: #c2c2c2;
+  background-color: rgb(243, 239, 239);
   cursor: pointer;
 }
 .shield-image {

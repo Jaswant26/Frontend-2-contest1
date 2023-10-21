@@ -34,24 +34,5 @@ function erase(event) {
     var canvas = document.getElementById("canvas");
     var c = canvas.getContext("2d");
     c.globalCompositeOperation = "destination-out";
-    c.clearRect(event.clientX, event.clientY, 20, 20);
+    c.fillRect(event.clientX, event.clientY, 10, 10);
   }
-//   function onMouseDown(event) {
-//     let {clientX , clientY} = event; 
-//     // {clientX, clientY} is position where use makes the mousedown.
-//     c.beginPath(); 
-//     c.moveTo(clientX, clientY);// stats the line at this position
-//     c.lineWidth = 4 ;
-//     c.strokeStyle = "blue"; 
-// }
-
-// function onMouseUp(event){
-//     let {clientX, clientY} = event ;
-//     // {clientX, clientY} is the position where user makes the mouseup.
-//     // console.log(clientX, clientY);
-//     c.lineTo(clientX, clientY);
-//     c.stroke();
-//     c.closePath();
-// }
-// canvas.addEventListener("mousedown", onMouseDown); 
-// canvas.addEventListener("mouseup", onMouseUp);
