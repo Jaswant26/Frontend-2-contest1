@@ -18,14 +18,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <script>
-      function erase(event) {
-        var canvas = document.getElementById("canvas");
-        var context = canvas.getContext("2d");
-        context.globalCompositeOperation = "destination-out";
-        context.fillRect(event.clientX, event.clientY, 10, 10);
-      }
-      </script>
   </head>
   <body>
     <div id="root">
@@ -44,17 +36,17 @@
         </button>
         <span class="vertical-line"></span>
         <button><i class="fa-regular fa-hand"></i></button>
-        <button><i class="fa-solid fa-arrow-left"></i><sub>1</sub></button>
-        <button><i class="fa-regular fa-square"></i><sub>2</sub></button>
-        <button><i class="fa-regular fa-square sqaure"></i><sub>3</sub></button>
-        <button><i class="fa-regular fa-circle"></i><sub>4</sub></button>
-        <button><i class="fa-solid fa-arrow-right"></i><sub>5</sub></button>
-        <button><i class="fa-solid fa-minus"></i><sub>6</sub></button>
-        <button><i class="fa-solid fa-pencil " id="pencil"></i><sub>7</sub></button>
+        <button><i class="fa-solid fa-arrow-left"></i></button>
+        <button><i class="fa-regular fa-square"></i></button>
+        <button><i class="fa-regular fa-square sqaure"></i></button>
+        <button><i class="fa-regular fa-circle"></i></button>
+        <button><i class="fa-solid fa-arrow-right"></i></button>
+        <button><i class="fa-solid fa-minus" id="line"></i></button>
+        <button><i class="fa-solid fa-pencil " id="pencil"></i></button>
         <input type="color" id="color-picker">
-        <button><i class="fa-solid fa-a"></i><sub>8</sub></button>
-        <button><i class="fa-regular fa-image"></i><sub>9</sub></button>
-        <button><i class="fa-solid fa-eraser" onclick="erase()"></i><sub>0</sub></button>
+        <button><i class="fa-solid fa-a"></i></button>
+        <button><i class="fa-regular fa-image"></i></button>
+        <button><i class="fa-solid fa-eraser" onclick="erase()"></i></button>
         <span class="vertical-line"></span>
         <button><i class="fa-solid fa-shapes"></i></button>
       </div>
