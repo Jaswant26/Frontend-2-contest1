@@ -24,29 +24,39 @@
       <header>
         <div class="sidebar">
           <div class="dropdown">
-            <button>
+            <button onclick="toggleMenu()">
               <i class="fa-solid fa-bars"></i>
             </button>
           </div>
         </div>
 
-        <div class="header-toolbar">
+        <div class="header-toolbar options" id="actionbuttons">
           <button>
             <i class="fa-solid fa-lock-open"></i>
           </button>
           <span class="vertical-line"></span>
           <button><i class="fa-regular fa-hand"></i></button>
           <button><i class="fa-solid fa-arrow-left"></i></button>
-          <button><i class="fa-regular fa-square"></i></button>
+          <button class="btn" id="rectangle" onclick="onActionClick(this)">
+            <i class="fa-regular fa-square"></i>
+          </button>
           <button><i class="fa-regular fa-square sqaure"></i></button>
-          <button><i class="fa-regular fa-circle"></i></button>
+          <button class="btn" id="circle" onclick="onActionClick(this)">
+            <i class="fa-regular fa-circle"></i>
+          </button>
           <button><i class="fa-solid fa-arrow-right"></i></button>
-          <button><i class="fa-solid fa-minus" id="line"></i></button>
-          <button><i class="fa-solid fa-pencil" id="pencil"></i></button>
-          <input type="color" id="color-picker" />
+          <button class="btn" id="line" onclick="onActionClick(this)">
+            <i class="fa-solid fa-minus"></i>
+          </button>
+          <button class="btn" id="freehand" onclick="onActionClick(this)">
+            <i class="fa-solid fa-pencil" id="pencil"></i>
+          </button>
+          <!-- <input type="color" id="color-picker" /> -->
           <button><i class="fa-solid fa-a"></i></button>
           <button><i class="fa-regular fa-image"></i></button>
-          <button><i class="fa-solid fa-eraser" onclick="erase()"></i></button>
+          <button class="btn" id="eraser" onclick="onActionClick(this)">
+            <i class="fa-solid fa-eraser"></i>
+          </button>
           <span class="vertical-line"></span>
           <button><i class="fa-solid fa-shapes"></i></button>
         </div>
@@ -75,13 +85,31 @@
             </button>
           </div>
           <div class="undo-forward">
-            <button class="undo-button">
+            <button class="undo-button" id="undo">
               <i class="fa-solid fa-arrow-left button-size"></i>
             </button>
-            <button class="forward-button">
+            <button class="forward-button" id="redo">
               <i class="fa-solid fa-arrow-right button-size"></i>
             </button>
           </div>
+        </div>
+        <div class="form hide">
+          <label for="strokewidth">Stroke Width</label>
+          <input
+            type="range"
+            id="strokewidth"
+            name="strokewidth"
+            min="3"
+            max="10"
+            oninput="onInput(this)"
+          />
+          <label for="strokestyle">Stroke Color</label>
+          <input
+            type="color"
+            name="strokestyle"
+            id="strokestyle"
+            oninput="onInput(this)"
+          />
         </div>
         <div class="footer-right">
           <div class="class-shield">
@@ -93,7 +121,10 @@
         </div>
       </footer>
     </div>
-    <script src="index.js"></script>
-    <script src="freehand.js"></script>
+    <!-- <script src="index.js"></script>
+    <script src="freehand.js"></script> -->
+     <script src="undoredo.js"></script>
+    <script src="state.js"></script>
+    <script src="drawing.js"></script>
   </body>
 </html>
